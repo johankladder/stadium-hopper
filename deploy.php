@@ -7,7 +7,7 @@ require 'recipe/laravel.php';
 set('application', 'my_project');
 
 // Project repository
-set('repository', '');
+set('repository', 'git@github.com:johankladder/stadium-hopper.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true); 
@@ -22,8 +22,12 @@ add('writable_dirs', []);
 
 // Hosts
 
-host('project.com')
-    ->set('deploy_path', '~/{{application}}');    
+host('95.85.23.195')
+    ->user('root')
+    ->port(22)
+    ->forwardAgent(true)
+    ->set('deploy_path', '/var/www/staging-stadium-hopper')
+    ->multiplexing(true);
     
 // Tasks
 

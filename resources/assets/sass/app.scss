@@ -1,9 +1,29 @@
-
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-
 // Variables
 @import "variables";
-
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+body {
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+.background {
+  color: #fff;
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #155799, #159957);
+  height: 100%;
+}
+
+.title {
+  font-size: 84px;
+  text-align: center;
+}
+
+
+

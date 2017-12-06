@@ -19,14 +19,31 @@
         <nav class="navbar navbar-inverse navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <a class="navbar-brand" href="{{ url('/') }}" methods="POST">
                         StadiumHopper
                     </a>
                 </div>
             </div>
         </nav>
         <div>
-            @yield('content')
+            @auth
+                <div class="col-sm-2 col-sm-offset-1">
+                    @include('layouts.side_nav')
+                </div>
+                <div class="col-md-8">
+                    <div class="panel panel-inverse">
+                        <div class="panel-heading">
+                            Dashboard
+                        </div>
+                        <div class="panel-body">
+                            @yield('content')
+                        </div>
+                    </div>
+                </div>
+            @endauth
+            @guest
+                @yield('content')
+            @endguest
         </div>
     </div>
 </div>

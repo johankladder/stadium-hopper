@@ -7117,7 +7117,7 @@ button.list-group-item-danger.active:focus {
 
 .panel-default > .panel-heading {
   color: #333333;
-  background-color: #fff;
+  background-color: #222;
   border-color: #d3e0e9;
 }
 
@@ -7126,7 +7126,7 @@ button.list-group-item-danger.active:focus {
 }
 
 .panel-default > .panel-heading .badge {
-  color: #fff;
+  color: #222;
   background-color: #333333;
 }
 
@@ -8368,5 +8368,22 @@ html {
 .title {
   font-size: 30px;
   text-align: center;
+}
+
+.dashboard-content {
+  color: #222;
+}
+
+.panel-inverse > .panel-heading {
+  color: #9d9d9d;
+  background-color: #222;
+}
+
+.panel-inverse > .panel-body {
+  color: #222;
+}
+
+.panel {
+  border: 0;
 }
 

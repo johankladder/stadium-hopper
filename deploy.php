@@ -26,7 +26,7 @@ host('95.85.23.195')
     ->user('root')
     ->port(22)
     ->forwardAgent(true)
-    ->set('deploy_path', '/var/www/staging-stadium-hopper')
+    ->set('deploy_path', '/var/www/html/staging-stadium-hopper')
     ->multiplexing(true);
     
 // Tasks
